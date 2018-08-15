@@ -1,6 +1,6 @@
 # boilerplate-latex-watchandbuild
 
-This repository is a boilerplate code to (re)build Latex documents automatically on changes.
+This repository is a boilerplate code to (re)build Latex documents automatically on changes. See a demo video [here](https://youtu.be/NtgmjwsaLqs).
 
 To start the script, just run:
 
