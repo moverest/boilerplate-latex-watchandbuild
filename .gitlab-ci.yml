@@ -1,0 +1,12 @@
+image: movrest/docker-latex-ci
+
+stages:
+   - build
+
+build_document:
+  stage: build
+  script:
+    - make main.pdf
+  artifacts:
+    paths:
+      - main.pdf
