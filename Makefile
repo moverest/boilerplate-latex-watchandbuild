@@ -4,8 +4,8 @@ TO_WATCH = Makefile main.tex
 all: main.pdf
 
 main.pdf: main.tex
-	xelatex --shell-escape main.tex # --shell-escape enable syntax coloration \
-	                                # with minted \
+	 # `--shell-escape` enables syntax coloration with `minted`. \
+	xelatex --shell-escape main.tex \
 	xelatex --shell-escape main.tex # To generate the table of contents.
 
 .PHONY: clean
