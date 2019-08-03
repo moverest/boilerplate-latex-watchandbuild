@@ -14,4 +14,4 @@ clean:
 
 .PHONY: watchandbuild
 watchandbuild:
-	while inotifywait -e modify ${TO_WATCH}; do make all; done
+	while inotifywait -e modify ${TO_WATCH} || true; do make all; done
