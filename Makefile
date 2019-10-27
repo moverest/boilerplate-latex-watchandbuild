@@ -1,12 +1,13 @@
-TO_WATCH = Makefile main.tex
+MAIN_FILE = main
+TO_WATCH = Makefile ${MAIN_FILE}.tex
 
 .PHONY: all
-all: main.pdf
+all: ${MAIN_FILE}.pdf
 
-main.pdf: main.tex
+${MAIN_FILE}.pdf: ${MAIN_FILE}.tex
 	 # `--shell-escape` enables syntax coloration with `minted`. \
-	xelatex --shell-escape main.tex \
-	xelatex --shell-escape main.tex # To generate the table of contents.
+	xelatex --shell-escape ${MAIN_FILE}.tex \
+	xelatex --shell-escape ${MAIN_FILE}.tex # To generate the table of contents.
 
 .PHONY: clean
 clean:
